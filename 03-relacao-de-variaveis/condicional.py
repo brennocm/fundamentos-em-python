@@ -9,10 +9,27 @@
 # else:
 #     print("O maior número é {}" .format(c))
 
-valor = int(input("Digite o valor analisado"))
-resto = valor % 2
+a = int(input("Digite o primeiro valor analisado"))
+b = int(input("Digite o segundo valor analisado"))
 
-if valor == 0:
-    print("O valor é par")
+resto_a = a % 2
+resto_b = b % 2
+
+if a > b:
+    print("O valor {} é maior que {} " .format(a, b))
+    if resto_a == 0:
+        print("E representa um número par")
+    else:
+        print("E representa um número impar")
+elif b > a:
+    print("O valor {} é maior que {} ".format(b, a))
+    if resto_b == 0:
+        print("E representa um número par")
+    else:
+        print("E representa um número impar")
 else:
-    print("O valor é impar")
+    print("Os valores são iguais")
+    if resto_a == 0:
+        print("E representa um número par")
+    else:
+        print("E representa um número impar")
